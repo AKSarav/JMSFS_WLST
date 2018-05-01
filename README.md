@@ -55,7 +55,7 @@ FSDNAME: "ForeignServer1SD"
     FSDNAME: ForeignServer1SD
     MODULE: jmsmodule1
     SUBDEPLOYMENTNAME: ForeignServer1SD
-    CONNECTIONURL: tcp://sonic01.mwinventory.in:2506,tcp://sonic02.mwinventory.in:2506
+    CONNECTIONURL: tcp://sonicmq-node1:2506,tcp://sonicmq-node2:2506
     PASS: <Encrypted Password String>
     INITIALCONTEXTFACTORY: com.sonicsw.jndi.mfcontext.MFContextFactory
     PROPERTY: com.sonicsw.jndi.mfcontext.idleTimeout
@@ -66,13 +66,13 @@ FSDNAME: "ForeignServer1SD"
       VALUE: username 
     
 
-#Foreign Server1
+#Create new destination
 - TASKNAME: CREATEFDEST
-  DESTNAME: CheckPrinted
+  DESTNAME: sometopic
   TARGET: ForeignServer1
   MODULE: jmsmodule1
   SETLOCALJNDI: jms/sometopic
-  SETREMOTEJNDI: SonicJMS.TopicR.SonicServer1.SOMETOPIC
+  SETREMOTEJNDI: SonicJMS.Topic.SOMETOPIC
 
 - TASKNAME: END # This was created just to tell the script to STOP processing 
 
