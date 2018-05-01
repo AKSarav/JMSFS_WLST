@@ -229,28 +229,28 @@ changes once you are done.
 
 ---- CREATING DESTINATIONS AND MAPPING THEM TO FOREIGN SERVERS
 ------ JMS MODULE--> JMSModule1
------- DESTINATION NAME--> CheckPrinted
+------ DESTINATION NAME--> TestTopic
 ------ TARGET SERVER--> ForeignServer1
 ------ LOCAL JNDI NAME--> jms/TestTopic
 ------ REMOTE JNDI NAME--> SonicJMS.Topic.TestTopic
 
 ---- CREATING DESTINATIONS AND MAPPING THEM TO FOREIGN SERVERS
 ------ JMS MODULE--> JMSModule1
------- DESTINATION NAME--> OFACExternalSourceStatusChangeSub
+------ DESTINATION NAME--> mwiTopic
 ------ TARGET SERVER--> ForeignServer1
 ------ LOCAL JNDI NAME--> jms/mwiTopic
 ------ REMOTE JNDI NAME--> SonicJms.Topic.mwiTopic
 
 ---- CREATING DESTINATIONS AND MAPPING THEM TO FOREIGN SERVERS
 ------ JMS MODULE--> JMSModule1
------- DESTINATION NAME--> CheckPrinted
+------ DESTINATION NAME--> TestTopic
 ------ TARGET SERVER--> ForeignServer2
 ------ LOCAL JNDI NAME--> jms/TestTopic
 ------ REMOTE JNDI NAME--> SonicJMS.Topic.TestTopic
 
 ---- CREATING DESTINATIONS AND MAPPING THEM TO FOREIGN SERVERS
 ------ JMS MODULE--> JMSModule1
------- DESTINATION NAME--> OFACExternalSourceStatusChangeSub
+------ DESTINATION NAME--> mwiTopic
 ------ TARGET SERVER--> ForeignServer2
 ------ LOCAL JNDI NAME--> jms/mwiTopic
 ------ REMOTE JNDI NAME--> SonicJms.Topic.mwiTopic
