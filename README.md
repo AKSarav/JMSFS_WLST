@@ -131,13 +131,14 @@ Encrypted Password is
 {AES}YQa2Qwh2IyjJXKPdG1IcTCHUZ5NuN46vfaJaydVwli4=
 ```
 
+10) Make Sure you **update the weblogic Config file and Key file** values in the JMSFS_WLST.py script
 
 ## How to Execute the script
 1) Place the input YAML file **JMSFS.yml** and the **JMSFS_Setup.py** script in the same directory
 2) Execute *SetDomainEnv.sh (or) SetWLSEnv.sh* to set the WLST environment ( Or if you have did the previous step to encrypt the password then you can skip this)
 3) Invoke WLST and pass this python script as argument as shown below
 
-```java weblogic.WLST JMSFS_Setup.py```
+```java weblogic.WLST JMSFS_WLST.py```
 
 
 ## Sample Execution Log
