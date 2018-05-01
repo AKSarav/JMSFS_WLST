@@ -1,4 +1,4 @@
-# JMSFS_Setup
+# JMSFS_WLST
 This is created in python and should be invoked with WLST for creating the Foreign Servers, Foreign Server Subdeployments, Foreign Server Destinations under the specified JMS Module
 
 
